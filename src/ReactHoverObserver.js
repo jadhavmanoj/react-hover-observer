@@ -164,7 +164,7 @@ export default class extends React.Component {
         );
 
         return (
-            <div { ...{
+            <tr { ...{
                 className,
                 onMouseEnter: this.onMouseEnter,
                 onMouseLeave: this.onMouseLeave,
@@ -172,7 +172,7 @@ export default class extends React.Component {
                 onMouseOut: this.onMouseOut
             }}>
                 { this.renderChildrenWithProps(children, childProps) }
-            </div>
+            </tr>
         );
     }
 };
